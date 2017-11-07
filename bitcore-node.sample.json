@@ -1,0 +1,27 @@
+{
+    "network": "livenet",
+    "port": 3001,
+    "services": [
+        "bitcoind",
+        "web",
+        "insight-yng-api",
+        "insight-yng"
+
+    ],
+    "servicesConfig": {
+
+        "insight-yng": {
+            "11routePrefix": "insight-yng",
+            "apiPrefix": "insight-yng-api"
+        },
+        "bitcoind": {
+            "connect": [{
+                "rpchost": "127.0.0.1",
+                "rpcport": 23002,
+                "rpcuser": "1234567890",
+                "rpcpassword": "1234567890",
+                "zmqpubrawtx": "tcp://127.0.0.1:23091"
+            }]
+        }
+    }
+}
