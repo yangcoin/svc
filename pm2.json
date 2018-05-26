@@ -2,7 +2,8 @@
     "apps": [{
         "name": "insight-yng",
         "script": "start.js",
-        "watch": true,
+        "args":"start",
+        "watch": false,
         "exec_interpreter": "node@6.11.4"
     }]
 }
